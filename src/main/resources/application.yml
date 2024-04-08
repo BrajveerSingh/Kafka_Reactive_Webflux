@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: SPRINGBOOT-KAFKA-TUTORIAL
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: TestGroup
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+kafka:
+  test-topic: test-topic
+  wikimedia-topic: wikimedia_recent_changes
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+    com:
+      launchdarkly:
+        eventsource: DEBUG
